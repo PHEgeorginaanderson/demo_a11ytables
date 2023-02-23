@@ -8,11 +8,11 @@ source("Demo/libraries.R")
 
 cover_df <- tibble::tribble(
   ~"subsection_title",  ~"subsection_content",
-  "Description", "Data tables to accompany the published report: Blah blah blah",
-  "Contact for general enquiries", "pha-ohid@dhsc.gov.uk",
+  "Description", "Data tables to accompany the published report: Blah blah blah", # amended from template
+  "Contact for general enquiries", "pha-ohid@dhsc.gov.uk",                        # amended from template 
   "Contact for press enquiries", "pressofficenewsdesk@dhsc.gov.uk",
   "Publication Date", "29 November 2022", 
-  "Version", substring(system("git rev-parse HEAD", intern=TRUE),1,8)           # add Git version
+  "Version", substring(system("git rev-parse HEAD", intern=TRUE),1,8)             # adds Git version
 )
 
   contents_df <- tibble::tribble(
