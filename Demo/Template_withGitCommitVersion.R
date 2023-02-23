@@ -85,7 +85,6 @@ gitCommit <- substring(system("git rev-parse HEAD", intern=TRUE),1,8)   # add Gi
 # Create output with Git commit in filename
 openxlsx::saveWorkbook(
   my_wb,
-  paste0("Demo/EditedExample_", gitCommit, ".xlsx"), 
-  overwrite = TRUE
+  paste0("Demo/EditedExample_", gitCommit, ".xlsx")
 )
 
